@@ -1,0 +1,45 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Meetup
+    meta(name='description', content='Meetup Site')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    #container
+      header.grid(role='banner')
+        h1.invisible
+        nav.grid(role='navigation')
+          ul.nav--list
+            li.nav--list-item
+              a(href='find') Find
+              p  a Meetup Group
+            li.nav--list-item
+              a(href='start') Start
+              p  a Meetup Group
+            li.nav--list-item
+              a(href='sign up') Sign up
+            li.nav--list-item
+              a(href='Login') Login
+      section.module1
+        h1  Log in
+        h2 Not registered with us yet?
+        a(sign='sign', up='up')
+          h2 Email Address
+          form
+            | Email Adress:
+            input(type='text', name='email')
+            br
+            h2 Password
+            a(href='forgot') Forgot your password?
+            | Password:
+            input(type='text', name='password')
+          a.button(href='login') login
+          p Keep me logged in
+          input(type='checkbox', checked)
+          input(type='checkbox', checked=true)
+          input(type='checkbox', checked=false)
+          input(type='checkbox')
+          input(type='checkbox', checked=true)
+
